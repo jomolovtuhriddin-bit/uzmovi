@@ -1,81 +1,158 @@
 {% extends "base.html" %}
 {% block content %}
-<style>
-    input {
-        border: 1px solid #313842;
-    }
-    span {
-        padding: 10px 10px 10px 10px;
-        
-    }
-    button {
-        border:1px solid #313842 ;
-        
-    }
-    
-</style>
-<body>
-    <div class="wrapper w-[100%] h-[1000px] flex items-center justify-center bg-[#161d25]  text-[#6e879f] ">
-        <div class="kvadrat w-[852px] h-[600px] mt-[150px]  bg-[#222933] rounded-[5px] ">
-            <div class="chiz w-[3px] h-[40px] bg-[#9b59b6] relative top-[35px]"></div>
-            <h1 class="text-[22px] ml-[30px]">BIZ BILAN ALOQA </h1>
-            <div class="yozuvlar w-[852px] h-[108px] bg-[#24303d] mt-[20px] ">
-                <div class="ora ml-[35px] mt-[15px]">
-                    <h4 class="pt-[15px] text-[12px] font-bold ">Assalomu alaykum, saytimizning hurmatli mehmoni!</h4>
-                    <p class="mt-[15px] text-[12px]">Quyidagi aloqa formasidan foydalanib, bizga istalgan mavzuda xabar
-                        yuborishingiz mumkin. 24 soat ichida murojaatingizni ko'rib chiqib sizga <br> javob yozamiz.
-                        Saytimizni tanlaganingiz uchun tashakkur!</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-[1000px] ml-[300px]">
 
+    <!-- CARD -->
+    <div class="space-y-3">
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://picsum.photos/400/250?1" class="w-full h-52 object-cover">
+        <span class="absolute bottom-2 right-2 bg-black/80 text-xs px-2 py-1 rounded">
+          42:44
+        </span>
+      </div>
 
-
-                </div>
-
-            </div>
-            <div class="inputlar flex-col flex items-center justify-center mt-[40px] gap-[13px] ">
-                <div class="input1  flex ">
-                    <div class="kvad w-[39px] h-[34px] bg-[#333d4d] flex items-center justify-center rounded-[2px] ">
-                         <i class="fa fa-user"></i>
-                    </div>
-                    <input class="w-[733px] h-[34px] bg-[#28313e] text-[#a5bbdc] text-[13px]  " type="text" placeholder="   Ismingiz">
-                </div>
-                     <div class="input2  flex ">
-                    <div class="kvad w-[39px] h-[34px] bg-[#333d4d] flex items-center justify-center rounded-[2px] ">
-                         <i class="fa fa-at"></i>
-                    </div>
-                    <input class="w-[733px] h-[34px] bg-[#28313e] text-[#a5bbdc] text-[13px] " type="text" placeholder="   E-mail, telefon raqam yoki telegram havola">
-                </div>
-                     <div class="input3  flex ">
-                    <div class="kvad w-[39px] h-[34px] bg-[#333d4d] flex items-center justify-center rounded-[2px] ">
-                       <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <select class="w-[733px] h-[34px] bg-[#28313e] text-[#8893a1] px-[10px]  text-[13px]" name="recip">
-                                        
-                                        <option value="tech">  Texnik bo'lim</option>
-                                        <option value="movie">  Filmlar bo'limi</option>
-                                    </select>
-                </div>
-                     <div class="input4  flex ">
-                    <div class="kvad w-[39px] h-[34px] bg-[#333d4d] flex items-center justify-center rounded-[2px] ">
-                      <i class="fa-regular fa-file-lines"></i>
-                    </div>
-                    <input class="w-[733px] h-[34px] bg-[#28313e] text-[#a5bbdc] text-[13px] " type="text" placeholder="   Xabar mavzusi">
-                </div>
-                 <div class="input5  flex ">
-                    <div class="kvad w-[39px] h-[101px] bg-[#333d4d] flex items-center justify-center rounded-[2px] ">
-                     <i class="fa-regular fa-pen-to-square"></i>
-                    </div>
-                    <textarea class="w-[733px] h-[101px]  bg-[#28313e] text-[#a5bbdc] text-[13px] " name="" id="" placeholder="    Xabar..."></textarea>
-                </div>
-               
-                <button onclick="" class=" w-[772px] h-[34px] bg-[#232f3d] text-[#99b1d4] text-[13px] mt-[9px] ">YUBORISH</button>
-               
-                    
-                </div>
-
-            </div>
+      <div class="flex gap-3">
+        <img src="https://i.pravatar.cc/40?1" class="w-10 h-10 rounded-full">
+        <div>
+          <h3 class="font-semibold leading-snug">
+            Hammani yoshligida shunday bo‘lgan 😅
+          </h3>
+          <p class="text-sm text-gray-400">
+            Vincehauz
+          </p>
+          <p class="text-sm text-gray-400 flex items-center gap-2">
+            <i class="fa-solid fa-eye"></i> 1,5 mln • 6 kun oldin
+          </p>
         </div>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="space-y-3">
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://picsum.photos/400/250?2" class="w-full h-52 object-cover">
+        <span class="absolute bottom-2 right-2 bg-black/80 text-xs px-2 py-1 rounded">
+          26:02
+        </span>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="https://i.pravatar.cc/40?2" class="w-10 h-10 rounded-full">
+        <div>
+          <h3 class="font-semibold">
+            EMIN, JONY – Kamin (Lyrics)
+          </h3>
+          <p class="text-sm text-gray-400">
+            Shanda Arguelles
+          </p>
+          <p class="text-sm text-gray-400 flex items-center gap-2">
+            <i class="fa-solid fa-eye"></i> 2,5 mln • 3 oy oldin
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="space-y-3">
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://picsum.photos/400/250?3" class="w-full h-52 object-cover">
+        <span class="absolute bottom-2 right-2 bg-black/80 text-xs px-2 py-1 rounded">
+          16:40
+        </span>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="https://i.pravatar.cc/40?3" class="w-10 h-10 rounded-full">
+        <div>
+          <h3 class="font-semibold">
+            SHELBI MAFIA KELDI 😱
+          </h3>
+          <p class="text-sm text-gray-400">
+            CARDINAL
+          </p>
+          <p class="text-sm text-gray-400 flex items-center gap-2">
+            <i class="fa-solid fa-eye"></i> 107 ming • 1 kun oldin
+          </p>
+        </div>
+      </div>
+    </div>
 
 
-</body>
+        <!-- CARD -->
+    <div class="space-y-3">
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://picsum.photos/400/250?1" class="w-full h-52 object-cover">
+        <span class="absolute bottom-2 right-2 bg-black/80 text-xs px-2 py-1 rounded">
+          42:44
+        </span>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="https://i.pravatar.cc/40?1" class="w-10 h-10 rounded-full">
+        <div>
+          <h3 class="font-semibold leading-snug">
+            Hammani yoshligida shunday bo‘lgan 😅
+          </h3>
+          <p class="text-sm text-gray-400">
+            Vincehauz
+          </p>
+          <p class="text-sm text-gray-400 flex items-center gap-2">
+            <i class="fa-solid fa-eye"></i> 1,5 mln • 6 kun oldin
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="space-y-3">
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://picsum.photos/400/250?2" class="w-full h-52 object-cover">
+        <span class="absolute bottom-2 right-2 bg-black/80 text-xs px-2 py-1 rounded">
+          26:02
+        </span>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="https://i.pravatar.cc/40?2" class="w-10 h-10 rounded-full">
+        <div>
+          <h3 class="font-semibold">
+            EMIN, JONY – Kamin (Lyrics)
+          </h3>
+          <p class="text-sm text-gray-400">
+            Shanda Arguelles
+          </p>
+          <p class="text-sm text-gray-400 flex items-center gap-2">
+            <i class="fa-solid fa-eye"></i> 2,5 mln • 3 oy oldin
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="space-y-3">
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="https://picsum.photos/400/250?3" class="w-full h-52 object-cover">
+        <span class="absolute bottom-2 right-2 bg-black/80 text-xs px-2 py-1 rounded">
+          16:40
+        </span>
+      </div>
+
+      <div class="flex gap-3">
+        <img src="https://i.pravatar.cc/40?3" class="w-10 h-10 rounded-full">
+        <div>
+          <h3 class="font-semibold">
+            SHELBI MAFIA KELDI 😱
+          </h3>
+          <p class="text-sm text-gray-400">
+            CARDINAL
+          </p>
+          <p class="text-sm text-gray-400 flex items-center gap-2">
+            <i class="fa-solid fa-eye"></i> 107 ming • 1 kun oldin
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
   
 {% endblock %}

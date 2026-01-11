@@ -25,3 +25,13 @@ def aloqaqilish(request):
     return render(request, "aloqa.html")
 def qoida(request):
     return render(request, "qoida.html")
+
+def istoria(request):
+    return render(request, "istoria.html")
+
+def bar(request):
+    return render(request, "bar.html")
+def music(request):
+    return render(request, "music.html")
+def game(request):
+    return render(request, "game.html")
